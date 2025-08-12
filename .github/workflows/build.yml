@@ -18,6 +18,19 @@ jobs:
     steps:
       - name: Check out Git repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: List files for debugging
+        run: |
+          echo "Current directory: $(pwd)"
+          ls -la
+          if [ -f "pnpm-lock.yaml" ]; then
+            echo "pnpm-lock.yaml found!"
+          else
+            echo "pnpm-lock.yaml not found!"
+            exit 1
+          fi
         
       - name: Setup Node.js
         uses: actions/setup-node@v4
