@@ -4,8 +4,8 @@ on:
   push:
     branches: [ main, master ]
     tags: [ 'v*' ]
-  pull_request:
-    branches: [ main, master ]
+  #pull_request:
+  #  branches: [ main, master ]
 
 jobs:
   build:
@@ -86,4 +86,4 @@ jobs:
             artifacts/**/*.exe
             artifacts/**/*.AppImage
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
