@@ -20,13 +20,6 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-
-      - name: Enable Long Paths (Windows)
-        if: matrix.os == 'windows-latest'
-        run: |
-          reg add "HKLM\SYSTEM\CurrentControlSet\Control\FileSystem" /v "LongPathsEnabled" /t REG_DWORD /d 1 /f
-          echo "长路径支持已启用"
-        shell: cmd
         
       - name: Setup Node.js
         uses: actions/setup-node@v4
