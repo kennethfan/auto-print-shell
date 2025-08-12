@@ -29,6 +29,7 @@
       "src/**/*",
       "package.json"
     ],
+    "publish": "never",
     "mac": {
       "category": "public.app-category.business",
       "target": ["dmg"]
