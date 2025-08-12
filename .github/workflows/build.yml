@@ -90,5 +90,10 @@ jobs:
           files: |
             artifacts/**/*.dmg
             artifacts/**/*.exe
+          tag_name: ${{ github.ref_name }}
+          name: Release ${{ github.ref_name }}
+          draft: true
+          generate_release_notes: true
+          debug: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
