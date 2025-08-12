@@ -1,0 +1,10 @@
+{
+  "title": "自动打印系统 - 开发环境",
+  "url": "http://dev.baiwangyuns.com",
+  "currentEnvironment": "测试环境",
+  "environments": {
+    "开发环境": "http://dev.baiwangyuns.com",
+    "测试环境": "http://localhost:5173/web-tools/",
+    "生产环境": "http://baiwangyuns.com"
+  }
+}
