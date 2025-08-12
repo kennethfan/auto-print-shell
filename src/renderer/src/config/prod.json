@@ -1,8 +1,0 @@
-{
-  "title": "自动打印系统",
-  "url": "http://baiwangyuns.com",
-  "currentEnvironment": "生产环境",
-  "environments": {
-    "生产环境": "http://baiwangyuns.com"
-  }
-}
