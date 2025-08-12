@@ -90,6 +90,5 @@ jobs:
           files: |
             artifacts/**/*.dmg
             artifacts/**/*.exe
-            # artifacts/**/*.AppImage
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
